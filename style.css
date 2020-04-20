@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index=1;
+    color: white;
+    font-family: Aldrich;
+    /*  background: url("kevia-tan-WKi73sdnq7c-unsplash.jpg");
+    background-clip: border-box;
+    background-attachment: fixed;
+    background-size: cover;
+    transform: scale(1.08); */
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("kevia-tan-WKi73sdnq7c-unsplash.jpg");
+    background-clip: border-box;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 0;
+    /*     filter: blur(5px);
+ */
+}
+
+#h11 {
+    display: block;
+    font-family: Megrim;
+    font-size: 5em;
+    padding: 0.5em 0.4em;
+    font-weight: 600;
+    border-radius: 0.2em;
+    border: 0.08em solid greenyellow;
+    transition: .5s ease;
+    margin-top: 3em;
+    cursor: default;
+}
+
+#h11:hover {
+    transform: scale(1.08);
+    text-shadow: 0.07em 0.07em rgb(128, 128, 128, 0.6);
+    box-shadow: 0.07em 0.07em rgb(128, 128, 128, 0.6);
+}
+
+#h11::selection,
+#h22::selection {
+    background-color: greenyellow;
+}
+
+#h22 {
+    display: block;
+    font-size: 3em;
+    font-weight: 400;
+    padding: 0.4em;
+    padding-top: 0.3em;
+    border-radius: 1em;
+    border-top: 0;
+    border-right: 0.1em;
+    border-bottom: 0.1em;
+    border-left: 0;
+    /*     border: solid greenyellow; */
+    animation: lin 1s 0.1s ease;
+    cursor: default;
+    transition: 0.5s ease;
+}
+
+#h22:hover {
+    box-shadow: 0.1em 0.1em greenyellow;
+}
+
+
+/* @keyframes lin {
+    0% {
+        box-shadow: 0 0 greenyellow;
+    }
+    to {
+        box-shadow: 0.1em 0.1em greenyellow;
+    }
+} */
+
+
+/* #useless {
+    background-color: white;
+    width: 9em;
+    height: 0.1em;
+} */
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 2.6em;
+    font-family: Aldrich;
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 5;
+}
+
+a {
+    transform-origin: top-left;
+    transition: 0.5s ease;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+    /*  text-shadow: 0.02em 0.02em white; */
+}
+
+a:visited {
+    color: white;
+    /* text-shadow: 0.02em 0.02em gray; */
+}
+
+a:hover {
+    transform: scale(1.08);
+    text-shadow: 0.1em 0.1em gray;
+}
+
+a:active {
+    border: 0.1em;
+    color: greenyellow;
+}
+
+#img {
+    margin: 1em;
+    width: 9em;
+    height: 9em;
+    padding: 0;
+    border-radius: 4.5em;
+    transition: 0.5s ease;
+}
+
+#img:hover {
+    transform: scale(0.9);
+    box-shadow: -0.2em -0.2em gray;
+}
+
+.content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    top: 100vh;
+    width: 95vw;
+    height: 100vh;
+    color: white;
+    font-size: 3em;
+    font-family: Aldrich;
+    text-shadow: 0.06em 0.06em gray;
+}
+
+#tt {
+    flex-grow: 1;
+    padding-right: 1.5em;
+}
+
+#tt::selection {
+    background-color: white;
+    color: black;
+}
+
+#mail {
+    padding: 5px;
+}
+
+#mail:hover {
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    text-shadow: none;
+}
+
+.cbg {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("ksenia-makagonova-eUnBVyC9EFs-unsplash.jpg");
+    background-size: cover;
+    z-index: -3;
+}
