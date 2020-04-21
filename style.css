@@ -85,7 +85,8 @@ header {
 }
 
 #h22:hover {
-    box-shadow: 0.1em 0.1em greenyellow;
+    transform: scale(.9);
+    box-shadow: 0.1em 0.1em greenyellow, -0.1em 0.1em greenyellow;
 }
 
 
@@ -179,6 +180,22 @@ a:active {
     padding-left: 1.2em;
 }
 
+#chead::selection {
+    /*   background-color: white;
+    color: black;
+    font-weight: 800; */
+    background-color: black;
+    color: greenyellow;
+    font-weight: 800;
+}
+
+#chead:hover {
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    text-shadow: none;
+}
+
 #tt::selection {
     background-color: white;
     color: black;
@@ -190,9 +207,15 @@ a:active {
 
 #mail:hover {
     background-color: white;
-    border-radius: 5px;
+    border-radius: 8px;
     color: black;
     text-shadow: none;
+}
+
+#chead:hover::selection {
+    background-color: black;
+    color: greenyellow;
+    font-weight: 800;
 }
 
 .cbg {
@@ -205,4 +228,14 @@ a:active {
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("ksenia-makagonova-eUnBVyC9EFs-unsplash.jpg");
     background-size: cover;
     z-index: -3;
+}
+
+#chead {
+    font-family: Megrim;
+    text-decoration: underline;
+    font-size: larger;
+    text-align: center;
+    padding: 5px;
+    transition: 0.5s ease;
+    cursor: none;
 }
